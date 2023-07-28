@@ -11,7 +11,9 @@ const Navbar = () => {
       direction="row"
       p={2}
       alignItems={'center'}
-      sx={{ position: 'sticky', backgroundColor: '#000', top: 0, justifyContent: 'space-between' }}>
+      zIndex={5}
+
+      sx={{ position: 'sticky', backgroundColor: '#000', top: 0, justifyContent: 'space-between', borderBottom:'1px solid white' }}>
         <Link to='/' style={{display:'flex', alignItems:'center'}}>
           <img src={logo} alt="logo" height={45}/>
           <h2 style={{color:'white', paddingLeft:'5px'}}>A Music</h2>

@@ -9,6 +9,8 @@ import {
   demoChannelUrl,
   demoVideoUrl,
 } from "../utils/constants";
+import { useEffect, useState } from "react";
+import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const VideoCard = ({
   video: {
@@ -16,6 +18,7 @@ const VideoCard = ({
     snippet,
   },
 }) => {
+ 
 //   console.log(videoId, snippet);
   return (
     <Card sx={{width: {md: '356px', xs:'320px'}, boxShadow:'none', borderRadius:0}}>
